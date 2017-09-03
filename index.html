@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Electron + MySQL Demo CRUD Application</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles/font-awesome.min.css" rel="stylesheet">
+
+  </head>
+  <body ng-app="ngApp">
+<!-- Header -->
+<div id="top-nav" class="navbar navbar-default navbar-static-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-toggle"></span>
+      </button>
+      <a class="navbar-brand" ui-sref="home">Electron + MySQL</a>
+    </div>
+    <div class="navbar-collapse collapse">
+
+
+
+      <ul class="nav navbar-nav navbar-left">
+        <li> 
+          <a  role="button"  ui-sref="product-list">Show Products</a>
+        </li>
+        <li> 
+          <a  role="button"  ui-sref="product-create">Add New Products</a>
+        </li>
+        <li> 
+          <a  role="button"  ui-sref="location-list">Show Locations</a>
+        </li>
+        <li> 
+          <a  role="button"  ui-sref="location-create">Add New Locations</a>
+        </li>
+        
+
+        
+
+      </ul>
+
+    </div>
+  </div><!-- /container -->
+</div>
+<!-- /Header -->
+
+<!-- Main -->
+<div class="container" ui-view>
+
+<p>A Demo App for Electron + MySQL</p>
+</div>
+
+<footer class="text-center">
+  
+</footer>
+  </body>
+  <script src="js/vendor/angular.js"></script>
+  <script src="js/vendor/angular-ui-router.js"></script>
+
+  <script src="js/services.js"></script>
+  <script src="js/app.js"></script>
+
+
+
+</html>
